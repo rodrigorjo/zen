@@ -2,7 +2,7 @@
 
 node {
     stage('Build') {
-        echo 'Building....'
+        sh './gradlew clean build'
     }
     stage('Test') {
         echo 'Building....'
