@@ -6,14 +6,14 @@ node {
 
     checkout scm
     stage('Clean') {
-            sh '${gradle} clean'
+            sh './gradlew clean'
             echo 'Cleaning....'
         }
     stage('Build') {
-        sh '${gradle} build -x test'
+        sh './gradlew build -x test'
     }
     stage('Test') {
-        sh "${gradle} test"
+        sh "./gradlew test"
         echo 'Testing....'
     }
     stage('Deploy') {
