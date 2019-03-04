@@ -18,6 +18,7 @@ node {
     }
     stage('Deploy') {
         if (currentBuild.result == null || currentBuild.result == 'SUCCESS') { 1
-        sh 'make publish'
+            sh 'make publish'
+        }
     }
 }
