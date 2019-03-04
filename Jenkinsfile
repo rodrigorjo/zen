@@ -17,6 +17,7 @@ node {
         echo 'Testing....'
     }
     stage('Deploy') {
-        echo 'Deploying....'
+        if (currentBuild.result == null || currentBuild.result == 'SUCCESS') { 1
+        sh 'make publish'
     }
 }
