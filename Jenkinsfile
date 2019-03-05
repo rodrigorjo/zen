@@ -32,7 +32,6 @@ node {
         }catch (Exception e) {
 
                try {
-                    mail to: rodrigorjo@gmail.com, subject: "The Pipeline ${env.JOB_NAME} failed :("
                     //Caso tenha falhado no teste armazena o relatorio de teste.
                     step([$class: "JUnitResultArchiver", testResults: "**/build/test-results/test/TEST-*.xml"])
                } catch (Exception ex) {
