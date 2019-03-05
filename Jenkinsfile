@@ -12,7 +12,7 @@ node {
             echo "Cleaning...."
         }
         stage("Build") {
-            sh "${gradle}build -x test"
+            sh "${gradle} build -x test"
         }
         stage("Test") {
             sh "${gradle} test"
