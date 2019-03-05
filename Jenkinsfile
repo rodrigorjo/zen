@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-node('zen') {
+node {
 
     withEnv(["GRADLE_OPTS=-Xmx1024m"]) {
 
