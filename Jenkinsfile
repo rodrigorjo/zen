@@ -10,7 +10,7 @@ node {
 
             checkout scm
             stage("Clean") {
-                echo "Cleaning...."
+                echo "Cleaning Master...."
                 sh "${gradle} clean"
             }
             stage("Build") {
