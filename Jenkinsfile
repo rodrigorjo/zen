@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 
-node("zen") {
+node('zen') {
 
-    withEnv "GRADLE_OPTS=-Xmx1024m" {
+    withEnv(["GRADLE_OPTS=-Xmx1024m"]) {
 
         def gradle = "./gradlew"
 
