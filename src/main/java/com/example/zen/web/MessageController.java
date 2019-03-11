@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+//@RestController
 public class MessageController {
 
     @Autowired
     CustomerService service;
 
-    @GetMapping()
+   // @GetMapping()
     public Customer findById(@RequestBody final Long id)
             throws UnsupportedEncodingException{
 
@@ -34,7 +34,7 @@ public class MessageController {
         return null;
     }
 
-    @PostMapping()
+   // @PostMapping()
     public ResponseEntity<String> save()
             throws UnsupportedEncodingException{
 

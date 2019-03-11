@@ -36,7 +36,7 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any()) //
                 .build()//
                 .apiInfo(
-                        new ApiInfoBuilder().title("Audit Producer")
+                        new ApiInfoBuilder().title("Zen")
                                 .description("API responsavel pela producao de mensagens de auditoria para o kafka")
                                 .build())
                 .enable(true);
